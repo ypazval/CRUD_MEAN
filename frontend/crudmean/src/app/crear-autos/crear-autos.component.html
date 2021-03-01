@@ -1,0 +1,22 @@
+<form (ngSubmit)="registrar()" ngNativeValidate>
+
+    <div class="container-sm">
+        <div class="mb-3">
+            <label for="marca" class="form-label">Marca</label>
+            <input [(ngModel)]='nuevoAuto.marca' [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="marca" placeholder="Ej. Ford" required>
+        </div>
+        <div class="mb-3">
+            <label for="modelo" class="form-label">Modelo</label>
+            <input [(ngModel)]='nuevoAuto.modelo'  [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="modelo" placeholder="Ej. 1998" required>
+        </div>
+        <div class="mb-3">
+            <label for="color" class="form-label">Color</label>
+            <input [(ngModel)]='nuevoAuto.color' [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="color" placeholder="Ej. Rojo" required>
+        </div>
+        <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input [(ngModel)]='nuevoAuto.precio' [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="precio" placeholder="Ej. 50000000" required>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Guardar</button>
+    </div>
+</form>
